@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Item List
+      ul
+        each item in items
+          li
+            h2= item.name
+            p Description: #{item.description}
+            p Category: #{item.category}
+            p Price: #{item.price}
+            p Number in Stock: #{item.numberInStock}
+            img(src=item.imageURL, alt=item.name)

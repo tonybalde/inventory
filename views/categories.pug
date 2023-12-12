@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 Category List
+    ul
+      each category in categories
+        li
+          h2= category.name
+          p Description: #{category.description}
+          img(src=category.URL, alt=category.name)
