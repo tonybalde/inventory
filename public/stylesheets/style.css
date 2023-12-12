@@ -6,3 +6,38 @@ body {
 a {
   color: #00B7FF;
 }
+
+header {
+  text-align: center; /* Align the content in the center */
+}
+
+nav {
+  display: flex; /* Display the items in a flex container */
+  justify-content: center; /* Center-align the items horizontally */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.navbar {
+  list-style-type: none; /* Remove the default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 10px; /* Add spacing between items */
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+}
+
+.para-index{
+  font-size: 24px;
+}
+
+.category-image {
+  width: 150px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  /* Add other styling properties as needed */
+}
