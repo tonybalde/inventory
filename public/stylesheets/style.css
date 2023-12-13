@@ -6,3 +6,110 @@ body {
 a {
   color: #00B7FF;
 }
+
+header {
+  text-align: center; /* Align the content in the center */
+}
+
+nav {
+  display: flex; /* Display the items in a flex container */
+  justify-content: center; /* Center-align the items horizontally */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; /* Remove the default list styles */
+  padding: 0; /* Remove default padding */
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-item {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 10px; /* Add spacing between items */
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+}
+
+ul.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap; /* Ensures no wrapping on smaller screens */
+  overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+}
+
+.h1-title{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.para-index{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+.text-center {
+  text-align: center; /* Center-align text */
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center-align items horizontally */
+  margin-top: 20px; /* Adjust margin top */
+}
+
+.stats-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats-item {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #333; /* Adjust color as needed */
+  list-style: none;
+}
+
+.category-image {
+  width: 150px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  /* Add other styling properties as needed */
+}
+
+.categories-img{
+  border-radius: 12px;
+}
+
+/* Example styling for the items */
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.item img {
+  max-width: 200px; /* Adjust image width as needed */
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.img-product{
+  border-radius: 12px;
+}

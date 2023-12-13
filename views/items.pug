@@ -1,0 +1,31 @@
+//- extends layout
+
+//- block content
+//-   h1 Item List
+//-       ul
+//-         each item in items
+//-           li
+//-             h2= item.name
+//-             p Description: #{item.description}
+//-             p Category: #{item.category}
+//-             p Price: #{item.price}
+//-             p Number in Stock: #{item.numberInStock}
+//-             img(src=item.imageURL, alt=item.name)
+extends layout
+
+block content
+  .container.mt-5
+    h1.text-center.mb-4 Item List
+
+  .text-center
+      a(href='/items/new', class='btn btn-primary mb-4') Add a new Item
+  
+  ul.item-list
+    each item in items
+      li.item
+        h2= item.name
+        p Description: #{item.description}
+        p Category: #{item.category}
+        p Price: $ #{item.price}
+        p Number in Stock: #{item.numberInStock}
+        img.img-product(src=item.imageURL, alt=item.name)

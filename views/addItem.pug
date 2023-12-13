@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .container.mt-5
+    .row.justify-content-center
+      .col-md-6
+        .card
+          .card-body
+            h1.card-title.mb-4 Add a New Item
+
+            form(action="/items/new", method="POST")
+              .mb-3
+                label(for="name", class="form-label") Name:
+                input(type="text", class="form-control", name="name", required)
+
+              .mb-3
+                label(for="description", class="form-label") Description:
+                input(type="text", class="form-control", name="description", required)
+
+              .mb-3
+                label(for="category", class="form-label") Category:
+                input(type="text", class="form-control", name="category", required)
+
+              .mb-3
+                label(for="price", class="form-label") Price:
+                input(type="number", class="form-control", name="price", required)
+
+              .mb-3
+                label(for="numberInStock", class="form-label") Number in Stock:
+                input(type="number", class="form-control", name="numberInStock", required)
+
+              .mb-3
+                label(for="imageURL", class="form-label") Image URL:
+                input(type="text", class="form-control", name="imageURL", required)
+
+              button.btn.btn-primary(type="submit") Add
