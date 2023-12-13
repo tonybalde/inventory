@@ -7,7 +7,7 @@
 //-   body
 //-     header
 //-       nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-0.pb-0.pl-0
-//-         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+//-         button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
 //-           span.navbar-toggler-icon
 //-         .collapse.navbar-collapse#navbarNav
 //-           ul.navbar-nav.mx-0.px-0
@@ -19,6 +19,7 @@
 //-               a.nav-link(href="/items") Items
 
 //-     block content
+
 doctype html
 html
   head
@@ -28,15 +29,12 @@ html
   body
     header
       nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-0.pb-0.pl-0
-        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
-          span.navbar-toggler-icon
-        .collapse.navbar-collapse#navbarNav
-          ul.navbar-nav.mx-0.px-0
-            li.nav-item
-              a.nav-link(href="/") Home
-            li.nav-item
-              a.nav-link(href="/categories") Categories
-            li.nav-item
-              a.nav-link(href="/items") Items
+        ul.navbar-nav.mx-auto
+          li.nav-item
+            a.nav-link(href="/") Home
+          li.nav-item
+            a.nav-link(href="/categories") Categories
+          li.nav-item
+            a.nav-link(href="/items") Items
 
     block content

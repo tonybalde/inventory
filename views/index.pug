@@ -1,11 +1,24 @@
+//- extends layout
+
+//- block content
+//-   h1= title
+//-   p.para-index Welcome CIA (Computer Inventory App), the place where you find and store all of your computer components.
+
+//-   // Show the statistics
+//-   p The database contains the following:
+//-   ul.list-unstyled
+//-     li Categories: #{categoriesCount}
+//-     li Items: #{itemsCount}
+
 extends layout
 
 block content
-  h1= title
+  h1.h1-title= title
   p.para-index Welcome CIA (Computer Inventory App), the place where you find and store all of your computer components.
 
   // Show the statistics
-  p The database contains the following:
-  ul
-    li Categories: #{categoriesCount}
-    li Items: #{itemsCount}
+  .statistics
+    p.stats-title The database contains the following:
+    ul.list-unstyled
+      li.stats-item Categories: #{categoriesCount}
+      li.stats-item Items: #{itemsCount}

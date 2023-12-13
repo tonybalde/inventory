@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
     const itemsCount = await Item.countDocuments();
 
     res.render('index', {
-      title: 'Your Title',
+      title: 'CIA (Computer Inventory App)',
       categoriesCount,
       itemsCount,
     });

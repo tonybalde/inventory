@@ -18,8 +18,12 @@ nav {
 }
 
 .navbar {
+  display: flex;
+  justify-content: center;
   list-style-type: none; /* Remove the default list styles */
   padding: 0; /* Remove default padding */
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .nav-item {
@@ -32,8 +36,49 @@ nav {
   color: #333; /* Set link color */
 }
 
+ul.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap; /* Ensures no wrapping on smaller screens */
+  overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+}
+
+.h1-title{
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .para-index{
+  margin-top: 2rem;
+  text-align: center;
   font-size: 24px;
+}
+
+.text-center {
+  text-align: center; /* Center-align text */
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center-align items horizontally */
+  margin-top: 20px; /* Adjust margin top */
+}
+
+.stats-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats-item {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #333; /* Adjust color as needed */
+  list-style: none;
 }
 
 .category-image {
