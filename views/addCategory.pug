@@ -1,0 +1,94 @@
+//- //- extends layout
+
+//- //- block content
+//- //-   h1 Add a New Category
+
+//- //-   form(method='POST', action='/categories/new', enctype='multipart/form-data')
+//- //-     label(for='name') Name:
+//- //-     input(type='text', id='name', name='name', required)
+
+//- //-     label(for='description') Description:
+//- //-     input(type='text', id='description', name='description', required)
+
+//- //-     label(for='image') Image:
+//- //-     input(type='file', id='image', name='image', accept='image/*')
+
+//- //-     input(type='submit', value='Add')
+
+
+//- //- block content
+//- //-   h1 Category List
+//- //-   a(href="/categories/new") Add a new Category
+
+//- //-   // Form for adding a new category
+//- //-   form(action="/categories/new", method="POST", enctype="multipart/form-data")
+//- //-     label(for="name") Name:
+//- //-     input(type="text", id="name", name="name", required)
+    
+//- //-     label(for="description") Description:
+//- //-     input(type="text", id="description", name="description", required)
+
+//- //-     label(for="URL") URL:
+//- //-     input(type="text", id="URL", name="URL", required)
+
+//- //-     button(type="submit") Add
+
+//- extends layout
+
+//- block content
+//-   h1 Add a New Category
+
+//-   form(action="/categories/new", method="POST")
+//-     label(for="name") Name:
+//-     input(type="text", id="name", name="name")
+
+//-     label(for="description") Description:
+//-     textarea(id="description", name="description")
+
+//-     label(for="imageURL") Image URL:
+//-     input(type="text", id="imageURL", name="imageURL")
+
+//-     button(type="submit") Add Category
+
+//- extends layout
+
+//- block content
+//-   h1 Add a New Category
+
+//-   form(action="/categories/new", method="POST")
+//-     label(for="name") Name:
+//-     input(type="text", name="name")
+
+//-     label(for="description") Description:
+//-     input(type="text", name="description")
+
+//-     label(for="imageURL") Image URL:
+//-     input(type="text", name="imageURL")
+
+//-     button(type="submit") Add
+
+extends layout
+
+block content
+  .container.mt-5
+    .row.justify-content-center
+      .col-lg-6
+        .card
+          .card-header
+            h1.text-center Add a New Category
+
+          .card-body
+            form(action="/categories/new", method="POST")
+              .mb-3
+                label(for="name", class="form-label") Name:
+                input(type="text", name="name", class="form-control")
+
+              .mb-3
+                label(for="description", class="form-label") Description:
+                input(type="text", name="description", class="form-control")
+
+              .mb-3
+                label(for="imageURL", class="form-label") Image URL:
+                input(type="text", name="imageURL", class="form-control")
+
+              button(type="submit", class="btn btn-primary") Add
