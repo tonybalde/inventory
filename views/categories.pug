@@ -1,12 +1,44 @@
 
+//- extends layout
+
+//- block content
+//-   h1 Category List
+//-   a(href='/categories/new') Add a new Category
+//-   ul
+//-     each category in categories
+//-       li
+//-         h2= category.name
+//-         p Description: #{category.description}
+//-         img(src=category.URL, alt=category.name, class='category-image')
+
+//- extends layout
+
+//- block content
+//-   h1 Category List
+//-   a(href='/categories/new') Add a new Category
+//-   // Display categories from the database
+//-   ul
+//-     each category in categories
+//-       li
+//-         h2= category.name
+//-         p Description: #{category.description}
+//-         img(src=category.imageURL, alt=category.name)
+
 extends layout
 
 block content
-  h1 Category List
-  ul
-    each category in categories
-      li
-        h2= category.name
-        p Description: #{category.description}
-        img(src=category.URL, alt=category.name, class='category-image')
+  .container.mt-5
+    h1.text-center.mb-4 Category List
 
+    a(href='/categories/new', class='btn btn-primary mb-4') Add a new Category
+
+    // Display categories from the database
+    .row.justify-content-center
+      each category in categories
+        .col-lg-4.mb-4
+          .card
+            .card-header
+              h2= category.name
+            .card-body
+              p= `${category.description}`
+              img(src=category.imageURL, alt=category.name, class='img-fluid')
