@@ -86,3 +86,30 @@ ul.navbar-nav {
   height: 150px; /* Set the desired height */
   /* Add other styling properties as needed */
 }
+
+.categories-img{
+  border-radius: 12px;
+}
+
+/* Example styling for the items */
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.item img {
+  max-width: 200px; /* Adjust image width as needed */
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.img-product{
+  border-radius: 12px;
+}
